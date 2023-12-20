@@ -2,7 +2,7 @@
 
 Final for CPCS 481: Snake AI game, our final project implements a Snake artificial intelligence agent using Pygame and neural networks, employing reinforcement learning to optimize its performance. The agent trains to pick up apple items, and avoid collisions. The project code implements a neural network-based artificial intelligence for playing the Snake game.
 
-To run follow steps below:
+# To run follow steps below:
 
 1. Download files to a local machine.
 2. (If using anaconda to run virtual enviroments) Create a virtual enviroment using `conda create -n snake_game_env python=3.10`.
