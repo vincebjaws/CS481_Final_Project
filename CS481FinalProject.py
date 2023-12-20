@@ -12,7 +12,6 @@ from collections import deque, namedtuple
 import pygame
 import random
 from IPython import display
-import os
 
 class ForwardFeedingNN(torch.nn.Module):
 	def __init__(self, n_input, n_hidden, n_output):
@@ -258,7 +257,7 @@ class AI_Snake: # Main class for the Snake AI
 		pygame.draw.rect(self.display, (16, 195, 66), pygame.Rect(self.goal.x + 10, self.goal.y + 2, 6, 4))
 
 
-		text = font.render("Score: " + str(self.score), True, (245, 245, 245))
+		text = font.render("Score: " + str(self.score) + "   Game: " + str(self.total_games), True, (245, 245, 245))
 		self.display.blit(text, [0, 0])
 		pygame.display.flip()
 
